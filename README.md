@@ -1,46 +1,21 @@
-# Getting Started with Create React App
+# Todo App with React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple and responsive Todo App written in React using Hooks, leaning back onto Mate Academy API.
 
-## Available Scripts
+# App Documentation
 
-In the project directory, you can run:
+1. The `index.tsx` file initializes basic CSS and creates the root.
+1. The `App.tsx` file initializes the rest of the page and handles most of the app's states.
+1. The `api` folder contains the `todos.ts` file, which is responsible for API calls to the Mate Academy API.
+1. The `styles` folder contains CSS styling for individual BEM blocks.
+1. The `types` folder contains `.ts` files with data types in them, such as `FilterTypes` or `Todo`.
+1. The `utils` folder contains API call logic used by the `todos.ts` from the api folder.
+1. The `components` folder contains individual parts of the site, including:
+    - `Notification`, which is a popup informing of any potential erros in case the API rejects the request, for example when the server is facing downtime.
+    - `TodoList`, which is the main section of the page, passing down props and structure to:
+        - `TodoItem`, which is every individual Todo in the list,
+        - `NewTodo`, which is the field at the top of the list, responsible for text input and pushing new todos into the list,
+        - `Footer`, which is the bottom part of the page, including the counter of active Todos, as well as the
+            - `Filter`, which contains filter option buttons, allowing the filtering of the Todo list by completion status.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# [App Demo](https://kacper-lyczba.github.io/react-todo-app)
